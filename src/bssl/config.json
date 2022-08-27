@@ -1,0 +1,18 @@
+{
+    "mode": "dev",
+    
+    "dev-domain": "http://localhost:5000",
+    "dev-domain-api": "http://localhost:5000/api/v1",
+
+    "prod-domain": "https://sightapi.site",
+    "prod-domain-api": "https://sightapi.site/api/v1",
+
+    "doc-comment-1": "the properties under here are responsible for the homepage",
+
+    "home-img-src": "https://cdn.shopify.com/s/files/1/0673/2291/files/weddingdesktoppost_1728x.png?v=1661554973",
+    "home-header-options": [
+        "shop", "about", "pricing"
+    ]
+
+
+}
