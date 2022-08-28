@@ -1,3 +1,35 @@
 .homepage-header {
     width: 100%;
 }
+
+.homepage--img {
+    width: 100%;
+    height: 69vh;
+}
+
+.homepage--image-wrapper {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+}
+
+.homepage--search-wrapper {
+    position: absolute;
+    z-index: 23;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.homepage--search-input {
+    width: 92%;
+    padding: 1rem;
+    background-color: var(--bg1);
+    border: none; outline: none;
+    border-radius: 14px;
+    box-shadow: 0px 1.4px 6.9px 0.14px rgba(0,0,0,0.34);
+}
+
+@media(max-width: 963px) {
+    .homepage--img { height: auto;  }
+}

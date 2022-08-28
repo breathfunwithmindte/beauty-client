@@ -3,8 +3,19 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.fn {
+.beauty-font {
   font-family: 'Pacifico', cursive !important;
+}
+
+.primary-padding {
+  padding-left: calc(2*var(--p)) !important;
+  padding-right: calc(2*var(--p)) !important;
+}
+@media(max-width: 693px) {
+  .primary-padding {
+    padding-left: var(--p2) !important;
+    padding-right: var(--p2) !important;
+  }
 }
 
 html {
@@ -35,25 +46,62 @@ html {
   .al-items-start { align-items: flex-start; }
   .al-items-end { align-items: flex-end; }
   
-  .p0 { padding: var(--p) }
-  .p1 { padding: var(--p1) }
-  .p2 { padding: var(--p2) }
-  .p0-lr { padding-left: var(--p); padding-right: var(--p) }
-  .p1-lr { padding-left: var(--p1); padding-right: var(--p1) }
-  .p2-lr { padding-left: var(--p2); padding-right: var(--p2) }
-  
   /** margin */
   .m0 { margin: var(--m) }
   .m1 { margin: var(--m1) }
   .m2 { margin: var(--m2) }
+  .ml0 { margin-left: var(--m) }
+  .ml1 { margin-left: var(--m1) }
+  .ml2 { margin-left: var(--m2) }
+  .mr0 { margin-right: var(--m) }
+  .mr1 { margin-right: var(--m1) }
+  .mr2 { margin-right: var(--m2) }
+  .mt0 { margin-top: var(--m) }
+  .mt1 { margin-top: var(--m1) }
+  .mt2 { margin-top: var(--m2) }
+  .mb0 { margin-bottom: var(--m) }
+  .mb1 { margin-bottom: var(--m1) }
+  .mb2 { margin-bottom: var(--m2) }
+  .my0 { margin-top: var(--m); margin-bottom: var(--m); }
+  .my1 { margin-top: var(--m1); margin-bottom: var(--m1); }
+  .my2 { margin-top: var(--m2); margin-bottom: var(--m2); }
+  .mx0 { margin-left: var(--m); margin-right: var(--m); }
+  .mx1 { margin-left: var(--m1); margin-right: var(--m1); }
+  .mx2 { margin-left: var(--m2); margin-right: var(--m2); }
+
+  /** padding */
+  .p0 { padding: var(--p) }
+  .p1 { padding: var(--p1) }
+  .p2 { padding: var(--p2) }
+  .pl0 { padding-left: var(--p) }
+  .pl1 { padding-left: var(--p1) }
+  .pl2 { padding-left: var(--p2) }
+  .pr0 { padding-right: var(--p) }
+  .pr1 { padding-right: var(--p1) }
+  .pr2 { padding-right: var(--p2) }
+  .pt0 { padding-top: var(--p) }
+  .pt1 { padding-top: var(--p1) }
+  .pt2 { padding-top: var(--p2) }
+  .pb0 { padding-bottom: var(--p) }
+  .pb1 { padding-bottom: var(--p1) }
+  .pb2 { padding-bottom: var(--p2) }
+  .py0 { padding-top: var(--p); padding-bottom: var(--p); }
+  .py1 { padding-top: var(--p1); padding-bottom: var(--p1); }
+  .py2 { padding-top: var(--p2); padding-bottom: var(--p2); }
+  .px0 { padding-left: var(--p); padding-right: var(--p); }
+  .px1 { padding-left: var(--p1); padding-right: var(--p1); }
+  .px2 { padding-left: var(--p2); padding-right: var(--p2); }
 
   /** border-radius */
   .b { border-radius: var(--borderr) }
   .b1 { border-radius: var(--borderr1) }
   .b2 { border-radius: var(--borderr2) }
-  .bg { background-color: var(--bg0) }
+
+  .bg0 { background-color: var(--bg0) }
   .bg1 { background-color: var(--bg1) }
   .bg2 { background-color: var(--bg2) }
+  .hover { background-color: var(--h); }
+
   .clr { background-color: var(--clr) }
   .clr1 { background-color: var(--clr1) }
   .clr2 { background-color: var(--clr2) }
@@ -91,5 +139,13 @@ html {
   h4, h5, h60 { font-size: 1.14rem; }
   strong, input, button { font-size: 0.97rem }
   p, pre  { font-size: 0.92rem; }
+  pre { white-space: pre-line !important; }
 
-  
+  @media(max-width: 693px) {
+    h1 { font-size: 1.69rem; }
+    h2 { font-size: 1rem; }
+    h3 { font-size: 0.97rem; }
+    h4, h5, h60 { font-size: 0.92rem; }
+    strong, input, button { font-size: 0.69rem }
+    p, pre  { font-size: 0.69rem; }
+  }

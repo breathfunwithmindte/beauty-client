@@ -1,12 +1,14 @@
 import { Button } from '@mui/material';
 import React from 'react';
+import config from "../../../bssl/config.json"
 
 const Header = () => {
 
     return (
         <header className='homepage-header  d-flex j-cont-end p1'>
-            <Button>About</Button>
-            <Button>Businesses</Button>
+            {config["home-header-options"].map((o, i) => {
+                return (<Button>{o}</Button>)
+            })}
             <Button variant="outlined">Login</Button>
         </header>
     );
