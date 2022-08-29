@@ -8,8 +8,8 @@
 }
 
 .primary-padding {
-  padding-left: calc(2*var(--p)) !important;
-  padding-right: calc(2*var(--p)) !important;
+  padding-left: calc(2*var(--pp)) !important;
+  padding-right: calc(2*var(--pp)) !important;
 }
 @media(max-width: 693px) {
   .primary-padding {
@@ -132,6 +132,8 @@ html {
   .btn-primary2 { background-color: var(--pr2); color: var(--pclr); padding: var(--p1); }
   
   .p-relative { position: relative }
+
+  .muted { color: var(--clr2) !important }
   
   h1 { font-size: 2.5rem; }
   h2 { font-size: 1.34rem; }

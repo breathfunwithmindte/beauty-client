@@ -11,11 +11,12 @@ const style_light = {
   bg2: "#e9e9e9",
   clr: "#000000",
   clr1: "#212325",
-  clr2: "#698497",
+  clr2: "#696969",
   h: "rgba(0,0,0,0.14)",
   p: "1.4rem",
   p1: "0.69rem",
   p2: "0.24rem",
+  pp: "6.9rem", // primary padding
   m: "1.4rem",
   m1: "0.69rem",
   m2: "0.14rem",
